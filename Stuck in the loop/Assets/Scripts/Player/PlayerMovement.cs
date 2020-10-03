@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D), typeof(BoxCollider2D))]
-public class PlayerManager : MonoBehaviour
+public class PlayerMovement : MonoBehaviour
 {
     public float Speed;
     Vector2 Direction;
