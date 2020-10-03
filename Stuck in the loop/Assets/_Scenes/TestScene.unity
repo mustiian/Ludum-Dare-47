@@ -478,6 +478,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   collisionTag: 
+  debug: 0
 --- !u!1 &657126515
 GameObject:
   m_ObjectHideFlags: 0
@@ -1029,6 +1030,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   trigger: {fileID: 545368475}
+  entrancePlaceA: {fileID: 0}
+  entrancePlaceB: {fileID: 0}
+  debug: 0
 --- !u!1 &1129795633
 GameObject:
   m_ObjectHideFlags: 0
@@ -1429,7 +1433,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1433143341}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.01, z: 0}
+  m_LocalPosition: {x: 0, y: 0.03, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 341332531}
@@ -1451,6 +1455,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 4294967295
   collisionTag: 
+  debug: 0
 --- !u!114 &1433143344
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1488,7 +1493,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.43, y: 1.61}
   m_EdgeRadius: 0
 --- !u!114 &1433143346
 MonoBehaviour:
