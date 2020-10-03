@@ -1,32 +1,42 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Game;
 
 [RequireComponent(typeof(BoxCollider2D))]
 public class PlayerInteraction : MonoBehaviour
 {
     public bool Interact;
 
-    private BoxCollider2D InteractionTrigger;
-
     private GameObject interactObject;
+
+    [SerializeField] private BoxTrigger2D InteractionTrigger;
 
     // Start is called before the first frame update
     void Start()
     {
-        InteractionTrigger = GetComponent<BoxCollider2D>();
-        InteractionTrigger.isTrigger = true;
+        InteractionTrigger.OnEnter += OnMyTriggerEnter;
+        InteractionTrigger.OnExit += OnMyTriggerExit;
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && Interact)
         {
-            Debug.Log(interactObject.name);
+            ActivateLever(interactObject.GetComponent<LeverManager>());
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnMyTriggerExit(Collider2D triggered)
+    {
+        if (interactObject == triggered.gameObject)
+        {
+            Interact = false;
+            interactObject = null;
+        }
+    }
+
+    private void OnMyTriggerEnter(Collider2D other)
     {
         if (interactObject == null)
         {
@@ -35,12 +45,9 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
-    private void OnTriggerExit2D(Collider2D other)
+    private void ActivateLever(LeverManager lever)
     {
-        if (interactObject == other.gameObject)
-        {
-            Interact = false;
-            interactObject = null;
-        }
+        if (lever != null)
+            lever.ActivateLight();
     }
 }

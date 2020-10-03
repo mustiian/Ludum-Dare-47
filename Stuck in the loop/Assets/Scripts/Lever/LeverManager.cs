@@ -1,17 +1,17 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Game;
 
 public class LeverManager : MonoBehaviour
 {
-    public GameObject[] Lights;
-
+    public LightController[] Lights;
 
     public void ActivateLight()
     {
         foreach (var light in Lights)
         {
-            Debug.Log(light.name);
+            light.ChangeLight();
         }
     }
 }
