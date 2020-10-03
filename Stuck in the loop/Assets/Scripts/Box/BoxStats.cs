@@ -37,6 +37,10 @@ public class BoxStats: MonoBehaviour
  
     }
 
+    public bool IsDragable()
+    {
+        return _isDragable;
+    }
 
     void CanBeDragged()
     {

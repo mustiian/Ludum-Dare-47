@@ -10,7 +10,17 @@ public class LeverManager : MonoBehaviour
 
     public void ActivateLight()
     {
-        Activated = !Activated;
+        Activated = true;
+
+        foreach (var light in Lights)
+        {
+            light.ChangeLight();
+        }
+    }
+
+    public void DeactivateLight()
+    {
+        Activated = false;
 
         foreach (var light in Lights)
         {

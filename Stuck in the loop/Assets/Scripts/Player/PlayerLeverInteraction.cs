@@ -3,14 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using Game;
 
-[RequireComponent(typeof(BoxCollider2D))]
-public class PlayerInteraction : MonoBehaviour
+public class PlayerLeverInteraction : MonoBehaviour
 {
-    public bool Interact;
-
-    private GameObject interactObject;
-
     [SerializeField] private BoxTrigger2D InteractionTrigger;
+
+    private LeverManager interactObject;
 
     // Start is called before the first frame update
     void Start()
@@ -21,17 +18,19 @@ public class PlayerInteraction : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && Interact)
+        if (Input.GetKeyDown(KeyCode.E) && interactObject != null)
         {
-            CheckLeverActivation(interactObject.GetComponent<LeverManager>());
+            if (!interactObject.Activated)
+                LeverActivation(interactObject);
+            else
+                LeverDeactivation(interactObject);
         }
     }
 
     private void OnMyTriggerExit(Collider2D triggered)
     {
-        if (interactObject == triggered.gameObject)
+        if (interactObject?.gameObject == triggered.gameObject)
         {
-            Interact = false;
             interactObject = null;
         }
     }
@@ -40,14 +39,21 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (interactObject == null)
         {
-            Interact = true;
-            interactObject = other.gameObject;
+            interactObject = other.gameObject.GetComponent<LeverManager>();
         }
     }
 
-    private void CheckLeverActivation(LeverManager lever)
+    private void LeverActivation(LeverManager lever)
     {
-        if (lever != null)
+        if (lever != null) {
             lever.ActivateLight();
+        }
+    }
+
+    private void LeverDeactivation(LeverManager lever)
+    {
+        if (lever != null) {
+            lever.DeactivateLight();
+        }
     }
 }
