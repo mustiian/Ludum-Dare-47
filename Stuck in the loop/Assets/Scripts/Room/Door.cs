@@ -1,18 +1,27 @@
 ﻿
+using System;
 using UnityEngine;
 
 namespace Game
 {
     public class Door : MonoBehaviour
     {
-        [SerializeField] private 
+        [SerializeField] private BoxTrigger2D trigger;
 
-        private void OnTriggerEnter2D(Collider2D other)
+        private void Awake()
         {
-            if (other.gameObject.CompareTag(triggerTag))
-            {
-                Debug.Log($"Door {name} triggered!");
-            }
+            trigger.OnEnter += OnMyTriggerEnter;
+            trigger.OnExit += OnMyTriggerExit;
+        }
+
+        private void OnMyTriggerEnter(Collider2D other)
+        {
+            Debug.Log($"Someone entered a door: {name}");
+        }
+        
+        private void OnMyTriggerExit(Collider2D triggered)
+        {
+            Debug.Log($"Someone exited a door: {name}");
         }
     }
 }

@@ -16,11 +16,21 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fdcef31-61fb-489d-8cdd-99973e66223d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Art.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/indexLayout.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/riderModule.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Room/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Room/Door.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,10 +50,10 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utilities/Flags/Flags.cs" />
         <option value="$PROJECT_DIR$/Packages/unity/Runtime/Trigger/BoxTrigger2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BoxTrigger2D.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Room/Door.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/ITrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Trigger2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/BoxTrigger2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Room/Door.cs" />
       </list>
     </option>
   </component>
@@ -87,7 +97,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601724839332</updated>
-      <workItem from="1601724875482" duration="5334000" />
+      <workItem from="1601724875482" duration="6274000" />
     </task>
     <servers />
   </component>
@@ -98,7 +108,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -112,5 +134,9 @@
       <screen x="1920" y="0" width="1080" height="1920" />
     </state>
     <state x="1961" y="605" key="SettingsEditor/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601728915291" />
+    <state x="2052" y="693" key="Vcs.Push.Dialog.v2" timestamp="1601730697038">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state x="2052" y="693" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601730697038" />
   </component>
 </project>

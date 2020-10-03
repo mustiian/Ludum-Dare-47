@@ -10,11 +10,15 @@
           <e p="Box" t="Include">
             <e p="BoxManager.cs" t="Include" />
           </e>
+          <e p="Lever" t="Include">
+            <e p="LeverManager.cs" t="Include" />
+          </e>
           <e p="Light" t="Include">
             <e p="LightManager.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
-            <e p="PlayerManager.cs" t="Include" />
+            <e p="PlayerInteraction.cs" t="Include" />
+            <e p="PlayerMovement.cs" t="Include" />
           </e>
           <e p="Room" t="Include">
             <e p="Door.cs" t="Include" />
