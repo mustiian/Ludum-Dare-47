@@ -5,9 +5,7 @@ using UnityEngine.Experimental.Rendering.Universal;
 
 public class LightController : MonoBehaviour
 {
-    public enum LightType { Blue, Red, Green, White }
-
-    public LightType LightColor;
+    public ColorType.Color LightColor;
 
     private Light2D light2D;
     private float defaultIntensity;

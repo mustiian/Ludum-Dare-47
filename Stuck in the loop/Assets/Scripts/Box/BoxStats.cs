@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class BoxStats: MonoBehaviour
 {
-    public enum BoxColors { red, green, blue };
-
     [SerializeField]
-    private BoxColors boxColor;
+    private ColorType.Color boxColor;
     [SerializeField]
     private bool _isDragable;
 
@@ -26,13 +24,13 @@ public class BoxStats: MonoBehaviour
         spriteColor = GetComponentInChildren<SpriteRenderer>();
         switch (boxColor)
         {
-            case BoxColors.red:
+            case ColorType.Color.red:
                 spriteColor.color = Color.red;
                 break;
-            case BoxColors.blue:
+            case ColorType.Color.blue:
                 spriteColor.color = Color.blue;
                 break;
-            case BoxColors.green:
+            case ColorType.Color.green:
                 spriteColor.color = Color.green;
                 break;
         }
