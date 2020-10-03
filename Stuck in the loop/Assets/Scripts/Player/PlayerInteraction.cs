@@ -9,6 +9,8 @@ public class PlayerInteraction : MonoBehaviour
 
     private BoxCollider2D InteractionTrigger;
 
+    private GameObject interactObject;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,17 +22,25 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && Interact)
         {
-
+            Debug.Log(interactObject.name);
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        Interact = true;
+        if (interactObject == null)
+        {
+            Interact = true;
+            interactObject = other.gameObject;
+        }
     }
 
-    private void OnTriggerExit2D(Collider2D collision)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        Interact = false;
+        if (interactObject == other.gameObject)
+        {
+            Interact = false;
+            interactObject = null;
+        }
     }
 }
