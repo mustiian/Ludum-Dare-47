@@ -23,7 +23,7 @@ public class PlayerInteraction : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && Interact)
         {
-            ActivateLever(interactObject.GetComponent<LeverManager>());
+            CheckLeverActivation(interactObject.GetComponent<LeverManager>());
         }
     }
 
@@ -45,7 +45,7 @@ public class PlayerInteraction : MonoBehaviour
         }
     }
 
-    private void ActivateLever(LeverManager lever)
+    private void CheckLeverActivation(LeverManager lever)
     {
         if (lever != null)
             lever.ActivateLight();
