@@ -19,7 +19,13 @@ namespace StageManager
             StartNextStage();
         }
 
-        public bool StartNextStage()
+        public void StartNewCollection(StagesCollection stages) {
+            Stages = stages;
+            isFinished = false;
+            StartNextStage();
+        }
+
+        protected bool StartNextStage()
         {
             currentStage = Stages.GetNextStage();
 
