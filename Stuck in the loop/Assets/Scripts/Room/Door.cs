@@ -6,7 +6,7 @@ namespace Game
     public class Door : MonoBehaviour
     {
         [SerializeField] private BoxTrigger2D trigger;
-
+        
         private void Awake()
         {
             trigger.OnEnter += OnMyTriggerEnter;
