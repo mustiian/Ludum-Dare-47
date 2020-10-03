@@ -22,10 +22,15 @@
           </e>
           <e p="Room" t="Include">
             <e p="Door.cs" t="Include" />
+            <e p="TeleportationThroughDoors.cs" t="Include" />
           </e>
           <e p="Triggers" t="Include">
             <e p="BoxTrigger2D.cs" t="Include" />
             <e p="Trigger2D.cs" t="Include" />
+          </e>
+          <e p="Utility" t="Include">
+            <e p="GameObjectExtension.cs" t="Include" />
+            <e p="TransformExtension.cs" t="Include" />
           </e>
         </e>
       </e>

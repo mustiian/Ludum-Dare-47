@@ -26,11 +26,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fdcef31-61fb-489d-8cdd-99973e66223d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Box/BoxStats.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/ColorType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Light/LightController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Platform/PlatformTriger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Platform/PlatformTriger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/InteractionItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/InteractionItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerBoxInteraction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerBoxInteraction.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerLeverInteraction.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerLeverInteraction.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Room/TeleportationThroughDoors.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Room/TeleportationThroughDoors.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/GameObjectExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/GameObjectExtension.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/TransformExtension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Utility/TransformExtension.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scenes/TestScene.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scenes/TestScene.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scenes/nichita_test.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/_Scenes/nichita_test.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Box/BoxManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Box/BoxManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ColorType.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Lever/LeverManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Lever/LeverManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Light/LightManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Light/LightManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Light/LightController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteraction.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/PlayerInteraction.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Box/BoxStats.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Room/Door.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Room/Door.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Square.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/Square.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/BoxTrigger2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/BoxTrigger2D.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Platform.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,8 +84,15 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/BoxTrigger2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/ITrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Trigger2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TransformExtenstion.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TransformExtension.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Room/DoorTeleport.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Room/BinedDoors.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/BoxTrigger2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Room/Door.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GameObjectExtension.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Room/BindedDoors.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Room/TeleportationThroughDoors.cs" />
       </list>
     </option>
   </component>
@@ -64,10 +103,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DebuggerViewTab_PTCS_FirstProportionKey" value="0.3499006" />
+    <property name="DebuggerViewTab_PTCS_LastProportionKey" value="0.3001988" />
     <property name="Discover.Launch.Via.Unity" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
+    <property name="settings.editor.selected.configurable" value="ReSpellerSettingsId" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
@@ -79,10 +120,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="15344">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="15344" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -97,7 +138,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1601724839332</updated>
-      <workItem from="1601724875482" duration="7125000" />
+      <workItem from="1601724875482" duration="17416000" />
     </task>
     <servers />
   </component>
@@ -130,10 +171,78 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1961" y="605" key="SettingsEditor" timestamp="1601728915291">
+    <state width="401" height="464" key="DebuggerActiveHint" timestamp="1601742731456">
       <screen x="1920" y="0" width="1080" height="1920" />
     </state>
-    <state x="1961" y="605" key="SettingsEditor/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601728915291" />
+    <state width="401" height="464" key="DebuggerActiveHint/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601742731456" />
+    <state width="1037" height="726" key="GridCell.Tab.0.bottom" timestamp="1601742959324">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="726" key="GridCell.Tab.0.bottom/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601742959324" />
+    <state width="1037" height="726" key="GridCell.Tab.0.center" timestamp="1601742959323">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="726" key="GridCell.Tab.0.center/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601742959323" />
+    <state width="1037" height="726" key="GridCell.Tab.0.left" timestamp="1601742959323">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="726" key="GridCell.Tab.0.left/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601742959323" />
+    <state width="1037" height="726" key="GridCell.Tab.0.right" timestamp="1601742959324">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="726" key="GridCell.Tab.0.right/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601742959324" />
+    <state width="1037" height="726" key="GridCell.Tab.1.bottom" timestamp="1601742978562">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="726" key="GridCell.Tab.1.bottom/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601742978562" />
+    <state width="1037" height="726" key="GridCell.Tab.1.center" timestamp="1601742978561">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="726" key="GridCell.Tab.1.center/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601742978561" />
+    <state width="1037" height="726" key="GridCell.Tab.1.left" timestamp="1601742978561">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="726" key="GridCell.Tab.1.left/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601742978561" />
+    <state width="1037" height="726" key="GridCell.Tab.1.right" timestamp="1601742978562">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="726" key="GridCell.Tab.1.right/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601742978562" />
+    <state width="1037" height="726" key="GridCell.Tab.2.bottom" timestamp="1601742959097">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="726" key="GridCell.Tab.2.bottom/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601742959097" />
+    <state width="1037" height="726" key="GridCell.Tab.2.center" timestamp="1601742959097">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="726" key="GridCell.Tab.2.center/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601742959097" />
+    <state width="1037" height="726" key="GridCell.Tab.2.left" timestamp="1601742959096">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="726" key="GridCell.Tab.2.left/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601742959096" />
+    <state width="1037" height="726" key="GridCell.Tab.2.right" timestamp="1601742959097">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="726" key="GridCell.Tab.2.right/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601742959097" />
+    <state width="1037" height="726" key="GridCell.Tab.3.bottom" timestamp="1601742959097">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="726" key="GridCell.Tab.3.bottom/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601742959097" />
+    <state width="1037" height="726" key="GridCell.Tab.3.center" timestamp="1601742959097">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="726" key="GridCell.Tab.3.center/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601742959097" />
+    <state width="1037" height="726" key="GridCell.Tab.3.left" timestamp="1601742959097">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="726" key="GridCell.Tab.3.left/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601742959097" />
+    <state width="1037" height="726" key="GridCell.Tab.3.right" timestamp="1601742959097">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state width="1037" height="726" key="GridCell.Tab.3.right/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601742959097" />
+    <state x="1961" y="605" key="SettingsEditor" timestamp="1601740129010">
+      <screen x="1920" y="0" width="1080" height="1920" />
+    </state>
+    <state x="1961" y="605" key="SettingsEditor/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601740129010" />
     <state x="2052" y="693" key="Vcs.Push.Dialog.v2" timestamp="1601730697038">
       <screen x="1920" y="0" width="1080" height="1920" />
     </state>
