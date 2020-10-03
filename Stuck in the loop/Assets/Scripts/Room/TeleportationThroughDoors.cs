@@ -10,8 +10,8 @@ namespace Game
     {
         [SerializeField] private Door fromDoor;
         [SerializeField] private Door toDoor;
-        
-        
+
+
         private readonly List<Mirror> mirrors = new List<Mirror>();
 
 
@@ -41,19 +41,13 @@ namespace Game
             if (mirror == null) return;
 
             mirrors.Remove(mirror);
-            
-            if (user.isWalkedThrough)
-            {
-                mirror.original.transform.Copy(mirror.clone.transform);
-            }
-
-            Destroy(mirror.clone);
+            mirror.Complete(user.isWalkedThrough);
         }
 
         private class Mirror
         {
             public readonly GameObject original;
-            public readonly GameObject clone;
+            private readonly GameObject clone;
             private readonly Door fromDoor;
             private readonly Door toDoor;
             
@@ -65,6 +59,11 @@ namespace Game
                 this.fromDoor = fromDoor;
                 this.toDoor = toDoor;
                 
+                foreach (var collider in this.clone.GetComponentsInChildren<Collider2D>())
+                {
+                    collider.enabled = false;
+                }
+
                 Synchronize();
             }
 
@@ -75,6 +74,16 @@ namespace Game
 
                 this.clone.transform.position = toDoor.transform.TransformPoint(originalInDoorPosition);
                 this.clone.transform.forward = toDoor.transform.TransformVector(originalInDoorForward);
+            }
+
+            public void Complete(bool isWalkedThrough)
+            {
+                if (isWalkedThrough)
+                {
+                    original.transform.Copy(clone.transform);
+                }
+
+                Destroy(clone);
             }
         }
     }
