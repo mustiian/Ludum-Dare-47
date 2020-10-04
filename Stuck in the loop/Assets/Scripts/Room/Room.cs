@@ -1,5 +1,6 @@
 ﻿#pragma warning disable CS0649
 
+using System;
 using UnityEngine;
 
 namespace Game
@@ -8,17 +9,23 @@ namespace Game
     {
         [SerializeField] private Vector2 size;
         [SerializeField] private float wallThickness;
-        [SerializeField] private SpriteRenderer[] walls;
+        [SerializeField] private Wall[] walls;
         [SerializeField] private SpriteRenderer floor;
-        
+
         private void OnValidate()
+        {
+            Synchornize();
+        }
+
+        [ContextMenu("Synchronize")]
+        private void Synchornize()
         {
             if (walls.Length == 4)
             {
-                UpdateWall(0,  transform.up);
-                UpdateWall(1,  transform.right);
-                UpdateWall(2, -transform.up);
-                UpdateWall(3, -transform.right);
+                SynchornizeWall(0,  transform.up);
+                SynchornizeWall(1,  transform.right);
+                SynchornizeWall(2, -transform.up);
+                SynchornizeWall(3, -transform.right);
             }
 
             if (floor != null)
@@ -29,16 +36,14 @@ namespace Game
             }
         }
 
-        private void UpdateWall(int index, Vector3 up)
+        private void SynchornizeWall(int index, Vector3 up)
         {
             var wall = walls[index];
             wall.transform.parent = transform;
-            wall.transform.localScale = new Vector2(
-                Mathf.Abs(up.x) == 0 ? size.x + wallThickness : wallThickness, 
-                Mathf.Abs(up.y) == 0 ? size.y + wallThickness : wallThickness
-            );
+            wall.transform.localScale = new Vector2((Mathf.Abs(up.x) == 0 ? size.x : size.y) + wallThickness, wallThickness);
             wall.transform.localPosition = new Vector2(size.x * 0.5f, size.y * 0.5f) * up;
-            wall.transform.up = Vector3.up;
+            wall.transform.up = up;
+            wall.Synchronize();
         }
     }
 }
