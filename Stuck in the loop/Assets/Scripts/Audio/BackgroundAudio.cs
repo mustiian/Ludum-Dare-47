@@ -6,11 +6,12 @@ public class BackgroundAudio : MonoBehaviour
 {
     public AudioClip music;
 
-    //Players
     private AudioSource audioSource;
 
     void Awake()
     {
+        DontDestroyOnLoad(this.gameObject);
+
         audioSource = GetComponent<AudioSource>();
         audioSource.clip = music;
         audioSource.loop = true;
