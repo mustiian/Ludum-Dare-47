@@ -81,6 +81,12 @@ namespace Game
                 if (isWalkedThrough)
                 {
                     original.transform.Copy(clone.transform);
+
+                    if(original.TryGetComponent(out Rigidbody2D body))
+                    {
+                        body.velocity = Vector3.zero;
+                        body.angularVelocity = 0f;
+                    }
                 }
 
                 Destroy(clone);
