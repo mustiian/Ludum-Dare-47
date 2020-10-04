@@ -5,26 +5,23 @@ using Game;
 
 public class LeverManager : MonoBehaviour
 {
-    public LightController[] Lights;
-    public bool Activated = false;
+    public LeverType Type;
 
-    public void ActivateLight()
+    [HideInInspector]
+    public CheckpointManager CheckpointManager;
+
+    private void Start()
     {
-        Activated = true;
-
-        foreach (var light in Lights)
-        {
-            light.ChangeLight();
-        }
+        CheckpointManager = FindObjectOfType<CheckpointManager>();
     }
 
-    public void DeactivateLight()
+    public void ActivateLever()
     {
-        Activated = false;
-
-        foreach (var light in Lights)
-        {
-            light.ChangeLight();
-        }
+        if (Type == LeverType.Restorer)
+            CheckpointManager.ResetToCheckpoint();
+        else if (Type == LeverType.Saver)
+            CheckpointManager.SaveCheckpoint();
     }
 }
+
+public enum LeverType { Saver, Restorer }

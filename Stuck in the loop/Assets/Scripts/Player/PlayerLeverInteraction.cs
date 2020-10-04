@@ -20,10 +20,7 @@ public class PlayerLeverInteraction : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && interactObject != null)
         {
-            if (!interactObject.Activated)
-                LeverActivation(interactObject);
-            else
-                LeverDeactivation(interactObject);
+            interactObject.ActivateLever();
         }
     }
 
@@ -40,20 +37,6 @@ public class PlayerLeverInteraction : MonoBehaviour
         if (interactObject == null)
         {
             interactObject = other.gameObject.GetComponent<LeverManager>();
-        }
-    }
-
-    private void LeverActivation(LeverManager lever)
-    {
-        if (lever != null) {
-            lever.ActivateLight();
-        }
-    }
-
-    private void LeverDeactivation(LeverManager lever)
-    {
-        if (lever != null) {
-            lever.DeactivateLight();
         }
     }
 }
