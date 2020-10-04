@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CheckpointItem : MonoBehaviour
 {
-
     private Vector2 checkpointPosition;
 
     private Rigidbody2D rigibody;
@@ -14,8 +13,7 @@ public class CheckpointItem : MonoBehaviour
     {
         rigibody = GetComponent<Rigidbody2D>();
 
-        var manager = FindObjectOfType<CheckpointManager>();
-        manager.AddCheckpointItem(this);
+        CheckpointManager.instance.AddCheckpointItem(this);
     }
 
     public void SaveCheckPoint()
@@ -28,5 +26,10 @@ public class CheckpointItem : MonoBehaviour
         rigibody.position = checkpointPosition;
         rigibody.velocity = Vector2.zero;
         rigibody.angularVelocity = 0f;
+    }
+
+    private void OnDestroy()
+    {
+        CheckpointManager.instance.RemoveItem(this);
     }
 }

@@ -6,6 +6,14 @@ public class CheckpointManager : MonoBehaviour
 {
     private List<CheckpointItem> CheckpointItems = new List<CheckpointItem>();
 
+    public static CheckpointManager instance;
+
+    private void Awake()
+    {
+        if (instance == null)
+            instance = this;
+    }
+
     public void AddCheckpointItem(CheckpointItem item)
     {
         CheckpointItems.Add(item);
@@ -25,5 +33,10 @@ public class CheckpointManager : MonoBehaviour
         {
             item.ResetToCheckpoint();
         }
+    }
+
+    public void RemoveItem(CheckpointItem item)
+    {
+        CheckpointItems.Remove(item);
     }
 }
