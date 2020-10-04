@@ -4,7 +4,9 @@ using UnityEngine;
 
 public class CheckpointItem : MonoBehaviour
 {
-    private Stack<Vector2> checkpointPosition;
+    private Stack<Vector2> checkpointPosition = new Stack<Vector2>();
+
+    private Vector2 startPosition;
 
     private Rigidbody2D rigibody;
 
@@ -14,6 +16,8 @@ public class CheckpointItem : MonoBehaviour
         rigibody = GetComponent<Rigidbody2D>();
 
         CheckpointManager.instance.AddCheckpointItem(this);
+
+        startPosition = rigibody.position;
 
         SaveCheckPoint();
     }
@@ -25,7 +29,11 @@ public class CheckpointItem : MonoBehaviour
 
     public void ResetToCheckpoint()
     {
-        rigibody.position = checkpointPosition.Pop();
+        if (checkpointPosition.Count != 0)
+            rigibody.position = checkpointPosition.Pop();
+        else
+            rigibody.position = startPosition;
+
         rigibody.velocity = Vector2.zero;
         rigibody.angularVelocity = 0f;
     }
