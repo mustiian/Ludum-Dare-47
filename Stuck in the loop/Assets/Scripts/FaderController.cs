@@ -33,7 +33,7 @@ public class FaderController : MonoBehaviour
     private bool isFadeInOut;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         fadePanel = GetComponent<Image> ();
     }

@@ -16,6 +16,9 @@ namespace StageManager
 
         protected virtual void Start()
         {
+            if (Stages == null)
+                Stages = GetComponentInChildren<StagesCollection>();
+
             StartNextStage();
         }
 
