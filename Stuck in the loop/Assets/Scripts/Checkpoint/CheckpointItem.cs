@@ -20,15 +20,11 @@ public class CheckpointItem : MonoBehaviour
 
     public void SaveCheckPoint()
     {
-        Debug.Log("Save item" + rigibody.position);
-
         checkpointPosition = rigibody.position;
     }
 
     public void ResetToCheckpoint()
     {
-        Debug.Log("Reset item" + checkpointPosition);
-
         rigibody.position = checkpointPosition;
         rigibody.velocity = Vector2.zero;
         rigibody.angularVelocity = 0f;
