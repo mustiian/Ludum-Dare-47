@@ -10,6 +10,7 @@ namespace Game
     {
         [SerializeField] private Door fromDoor;
         [SerializeField] private Door toDoor;
+        [SerializeField] private int mirrorLayer;
 
 
         private readonly List<Mirror> mirrors = new List<Mirror>();
@@ -31,7 +32,7 @@ namespace Game
 
         private void OnBeginInDoorUsing(GameObject actor)
         {
-            var mirror = new Mirror(actor, fromDoor, toDoor);
+            var mirror = new Mirror(actor, fromDoor, toDoor, mirrorLayer);
             mirrors.Add(mirror);
         }
 
@@ -52,17 +53,18 @@ namespace Game
             private readonly Door toDoor;
             
 
-            public Mirror(GameObject original, Door fromDoor, Door toDoor)
+            public Mirror(GameObject original, Door fromDoor, Door toDoor, int mirrorLayer)
             {
                 this.original = original;
-                this.clone = Instantiate(original);
                 this.fromDoor = fromDoor;
                 this.toDoor = toDoor;
+                this.clone = Instantiate(original);
+                this.clone.layer = mirrorLayer;
                 
-                foreach (var collider in this.clone.GetComponentsInChildren<Collider2D>())
-                {
-                    collider.enabled = false;
-                }
+                // foreach (var collider in this.clone.GetComponentsInChildren<Collider2D>())
+                // {
+                //     collider.enabled = false;
+                // }
 
                 Synchronize();
             }
