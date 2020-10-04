@@ -12,7 +12,7 @@ public class CorrectPlatformsStage : Stage
     //    public bool Status;
     //}
 
-    public PlatformTriger[] CheckPlatforms;
+    private PlatformTriger[] CheckPlatforms;
 
     public override bool ConditionToFinish()
     {
@@ -37,7 +37,7 @@ public class CorrectPlatformsStage : Stage
 
     public override void UpdateStage()
     {
-        if (ConditionToFinish())
+        if (ConditionToFinish() || isFinished)
             ExitStage();
     }
 }

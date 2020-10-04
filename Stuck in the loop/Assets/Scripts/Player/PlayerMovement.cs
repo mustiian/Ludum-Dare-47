@@ -9,6 +9,8 @@ public class PlayerMovement : MonoBehaviour
     Vector2 Direction;
     Rigidbody2D rigidBody;
 
+    
+
     //need for animation
     public Vector2 public_Direction { get { return Direction; } }
 
@@ -18,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     void Start()
     {
         rigidBody = GetComponent<Rigidbody2D>();
+        
     }
 
     private void FixedUpdate()

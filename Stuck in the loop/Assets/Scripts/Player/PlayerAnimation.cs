@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Game;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,44 +8,117 @@ using UnityEngine;
 
 public class PlayerAnimation : MonoBehaviour
 {
-
     private Animator playerAnimator;
     private PlayerMovement direction;
     private SpriteRenderer sprite;
 
-    // Start is called before the first frame update
+    [SerializeField] private Trigger2D triggerUp;
+    [SerializeField] private Trigger2D triggerDown;
+    [SerializeField] private Trigger2D triggerRight;
+    [SerializeField] private Trigger2D triggerLeft;
+
     void Start()
     {
         playerAnimator = GetComponent<Animator>();
         direction = GetComponentInParent<PlayerMovement>();
         sprite = GetComponent<SpriteRenderer>();
+
+        triggerDown.OnEnter += BoxMoveDown;
+        triggerUp.OnEnter += BoxMoveUp;
+        triggerRight.OnEnter += BoxMoveRight;
+        triggerLeft.OnEnter += BoxMoveLeft;
+
+        triggerDown.OnExit += StopBoxMoveDown;
+        triggerUp.OnExit += StopBoxMoveUp;
+        triggerRight.OnExit += StopBoxMoveRight;
+        triggerLeft.OnExit += StopBoxMoveLeft;
+
     }
 
-    // Update is called once per frame
+    private void BoxMoveDown(Collider2D other)
+    {
+        playerAnimator.SetBool("MovingDown", false);
+        playerAnimator.SetBool("DragDown", true);
+    }
+
+    private void BoxMoveUp(Collider2D other)
+    {
+        playerAnimator.SetBool("MovingUp", false);
+        playerAnimator.SetBool("DragUp", true);
+    }
+
+    private void BoxMoveRight(Collider2D other)
+    {
+        playerAnimator.SetBool("MovingSide", false);
+        playerAnimator.SetBool("DragSide", true);
+        sprite.flipX = false;
+    }
+
+    private void BoxMoveLeft(Collider2D other)
+    {
+        playerAnimator.SetBool("MovingSide", false);
+        playerAnimator.SetBool("DragSide", true);
+        sprite.flipX = true;
+    }
+
+    private void StopBoxMoveDown(Collider2D other)
+    {
+        playerAnimator.SetBool("MovingDown", true);
+        playerAnimator.SetBool("DragDown", false);
+    }
+
+    private void StopBoxMoveUp(Collider2D other)
+    {
+        playerAnimator.SetBool("MovingUp", true);
+        playerAnimator.SetBool("DragUp", false);
+    }
+
+    private void StopBoxMoveRight(Collider2D other)
+    {
+        playerAnimator.SetBool("MovingSide", true);
+        playerAnimator.SetBool("DragSide", false);
+        //sprite.flipX = true;
+    }
+
+    private void StopBoxMoveLeft(Collider2D other)
+    {
+        playerAnimator.SetBool("MovingSide", true);
+        playerAnimator.SetBool("DragSide", false);
+        //sprite.flipX = false;
+    }
+
+
     void LateUpdate()
     {
-        if(direction.public_Direction.y > 0)
-         {
-             playerAnimator.SetBool("MovingDown", false);
-             playerAnimator.SetBool("MovingSide", false);
-             playerAnimator.SetBool("MovingUp", true);
+        MoveAnimation();
+    }
 
-         }
+    void MoveAnimation()
+    {
+        if (direction.public_Direction.y > 0)
+        {
+            playerAnimator.SetBool("MovingDown", false);
+            playerAnimator.SetBool("MovingSide", false);
+            playerAnimator.SetBool("MovingUp", true);
+        }
 
-        if(direction.public_Direction.y < 0)
-         {
-             playerAnimator.SetBool("MovingSide", false);
-             playerAnimator.SetBool("MovingUp", false);
-             playerAnimator.SetBool("MovingDown", true);
+        if (direction.public_Direction.y < 0)
+        {
+            playerAnimator.SetBool("MovingSide", false);
+            playerAnimator.SetBool("MovingUp", false);
+            playerAnimator.SetBool("MovingDown", true);
+        }
 
-         }
+        if (direction.public_Direction.x > 0)
+        {
+            playerAnimator.SetBool("MovingUp", false);
+            playerAnimator.SetBool("MovingDown", false);
+            playerAnimator.SetBool("MovingSide", true);
 
-         if (direction.public_Direction.x > 0)
-         {
-             playerAnimator.SetBool("MovingUp", false);
-             playerAnimator.SetBool("MovingDown", false);
-             playerAnimator.SetBool("MovingSide", true);
-            sprite.flipX = true;
+            if (!playerAnimator.GetBool("DragSide"))
+            {
+                sprite.flipX = true;
+            }
         }
 
         if (direction.public_Direction.x < 0)
@@ -52,16 +126,19 @@ public class PlayerAnimation : MonoBehaviour
             playerAnimator.SetBool("MovingUp", false);
             playerAnimator.SetBool("MovingDown", false);
             playerAnimator.SetBool("MovingSide", true);
-            sprite.flipX = false;
 
+            if (!playerAnimator.GetBool("DragSide"))
+            {
+                sprite.flipX = false;
+            }
+            
         }
 
-        if (direction.public_Direction.x==0 && direction.public_Direction.y == 0)
+        if (direction.public_Direction.x == 0 && direction.public_Direction.y == 0)
         {
             playerAnimator.SetBool("MovingUp", false);
             playerAnimator.SetBool("MovingDown", false);
             playerAnimator.SetBool("MovingSide", false);
         }
-
     }
 }
