@@ -26,16 +26,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fdcef31-61fb-489d-8cdd-99973e66223d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Room/Wall.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Room/Wall.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Door.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Wall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Wall.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Room/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Room/Room.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Room/TeleportationThroughDoors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Room/TeleportationThroughDoors.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Demo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +61,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Room/Door.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GameObjectExtension.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Room/BindedDoors.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Room/TeleportationThroughDoors.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Room/Room.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Room/Wall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Room/Room.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Room/TeleportationThroughDoors.cs" />
       </list>
     </option>
   </component>
@@ -115,7 +110,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601724839332</updated>
       <workItem from="1601724875482" duration="17416000" />
-      <workItem from="1601804672110" duration="15529000" />
+      <workItem from="1601804672110" duration="16958000" />
     </task>
     <servers />
   </component>
