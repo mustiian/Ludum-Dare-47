@@ -31,7 +31,7 @@ namespace Game
             if (floor != null)
             {
                 floor.transform.parent = transform;
-                floor.transform.localScale = size;
+                floor.size = size;
                 floor.transform.localPosition = Vector3.zero;
             }
         }
@@ -40,9 +40,10 @@ namespace Game
         {
             var wall = walls[index];
             wall.transform.parent = transform;
-            wall.transform.localScale = new Vector2((Mathf.Abs(up.x) == 0 ? size.x : size.y) + wallThickness, wallThickness);
+            wall.transform.localScale = Vector3.one;
+            wall.Renderer.size = new Vector2(wallThickness, (Mathf.Abs(up.x) == 0 ? size.x : size.y) + wallThickness);
             wall.transform.localPosition = new Vector2(size.x * 0.5f, size.y * 0.5f) * up;
-            wall.transform.up = up;
+            wall.transform.right = up;
             wall.Synchronize();
         }
     }
