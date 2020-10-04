@@ -8,25 +8,42 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Box" t="Include">
-            <e p="BoxManager.cs" t="Include" />
+            <e p="BoxStats.cs" t="Include" />
+          </e>
+          <e p="ColorType.cs" t="Include" />
+          <e p="LevelStages" t="Include">
+            <e p="Stage.cs" t="Include" />
+            <e p="Stages" t="Include">
+              <e p="CorrectPlatformsStage.cs" t="Include" />
+            </e>
+            <e p="StagesCollection.cs" t="Include" />
+            <e p="StagesManager.cs" t="Include" />
           </e>
           <e p="Lever" t="Include">
             <e p="LeverManager.cs" t="Include" />
           </e>
           <e p="Light" t="Include">
-            <e p="LightManager.cs" t="Include" />
+            <e p="LightController.cs" t="Include" />
+          </e>
+          <e p="Platform" t="Include">
+            <e p="PlatformTriger.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
-            <e p="PlayerInteraction.cs" t="Include" />
+            <e p="PlayerBoxInteraction.cs" t="Include" />
+            <e p="PlayerLeverInteraction.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
           </e>
           <e p="Room" t="Include">
             <e p="Door.cs" t="Include" />
+            <e p="Room.cs" t="Include" />
             <e p="TeleportationThroughDoors.cs" t="Include" />
           </e>
           <e p="Triggers" t="Include">
             <e p="BoxTrigger2D.cs" t="Include" />
             <e p="Trigger2D.cs" t="Include" />
+          </e>
+          <e p="UI" t="Include">
+            <e p="InteractionNoteGUI.cs" t="Include" />
           </e>
           <e p="Utility" t="Include">
             <e p="GameObjectExtension.cs" t="Include" />
