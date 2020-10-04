@@ -1677,7 +1677,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionLayer:
     serializedVersion: 2
-    m_Bits: 16
+    m_Bits: 0
   collisionTag: Player
   debug: 0
 --- !u!114 &1918921814
