@@ -14,6 +14,8 @@ public class CheckpointItem : MonoBehaviour
         rigibody = GetComponent<Rigidbody2D>();
 
         CheckpointManager.instance.AddCheckpointItem(this);
+
+        SaveCheckPoint();
     }
 
     public void SaveCheckPoint()
