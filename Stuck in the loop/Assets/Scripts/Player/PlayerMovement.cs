@@ -9,6 +9,9 @@ public class PlayerMovement : MonoBehaviour
     Vector2 Direction;
     Rigidbody2D rigidBody;
 
+    //need for animation
+    public Vector2 public_Direction { get { return Direction; } }
+
     public bool CanMove;
 
     // Start is called before the first frame update
