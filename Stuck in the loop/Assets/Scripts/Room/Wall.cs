@@ -6,7 +6,10 @@ namespace Game
     public class Wall : MonoBehaviour
     {
         [SerializeField] private float doorWidth;
+        [SerializeField] private new SpriteRenderer renderer;
 
+        public SpriteRenderer Renderer => renderer;
+        
         // private string WallColliderNamePart => $"{name} Collider";
         
         private void Start()
@@ -41,7 +44,7 @@ namespace Game
             {
                 door.transform.parent = transform;
                 door.transform.localScale = doorLocalScale;
-                door.transform.localRotation = Quaternion.identity;
+                door.transform.up = transform.right;
                 //
                 // var doorLocalStart = door.transform.localPosition + new Vector3(-doorLocalScale.x * 0.5f, 0f, 0f);
                 // var doorLocalEnd   = door.transform.localPosition + new Vector3( doorLocalScale.x * 0.5f, 0f, 0f);
