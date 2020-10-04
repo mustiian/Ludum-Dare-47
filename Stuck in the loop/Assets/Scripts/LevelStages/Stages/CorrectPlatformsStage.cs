@@ -5,26 +5,29 @@ using StageManager;
 
 public class CorrectPlatformsStage : Stage
 {
-    [System.Serializable]
-    public struct PlatformStatus
-    {
-        public PlatformTriger platformTrigger;
-        public bool Status;
-    }
+    //[System.Serializable]
+    //public struct PlatformStatus
+    //{
+    //    public PlatformTriger platformTrigger;
+    //    public bool Status;
+    //}
 
-    public PlatformStatus[] CheckPlatforms;
+    public PlatformTriger[] CheckPlatforms;
 
     public override bool ConditionToFinish()
     {
-        isFinished = true;
-
         foreach (var platform in CheckPlatforms)
         {
-            if (platform.platformTrigger.activated != platform.Status)
-                isFinished = false;
+            if (platform.activated != true)
+                return false;
         }
 
-        return isFinished;
+        return true;
+    }
+
+    private void Start()
+    {
+        CheckPlatforms = FindObjectsOfType<PlatformTriger>();
     }
 
     public override void InitStage()
