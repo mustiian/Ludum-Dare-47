@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 851484095864537490}
   - component: {fileID: 2986389632534356443}
   - component: {fileID: 4170589192895677930}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 851484095981168545}
   - component: {fileID: 851484095981168546}
   - component: {fileID: 851484095981168547}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: TrigerTop
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,7 +213,7 @@ GameObject:
   - component: {fileID: 851484096115227017}
   - component: {fileID: 851484096115227018}
   - component: {fileID: 851484096115227019}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: TrigerRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -289,7 +289,7 @@ GameObject:
   - component: {fileID: 851484096760849641}
   - component: {fileID: 851484096760849643}
   - component: {fileID: 851484096760849636}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: Graphics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -407,7 +407,7 @@ GameObject:
   - component: {fileID: 851484096980116443}
   - component: {fileID: 851484096980116436}
   - component: {fileID: 851484096980116437}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: TrigerBot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -482,7 +482,7 @@ GameObject:
   - component: {fileID: 851484097134688025}
   - component: {fileID: 851484097134688026}
   - component: {fileID: 851484097134688027}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: TrigerLeft
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -557,7 +557,7 @@ GameObject:
   - component: {fileID: 477053428190174908}
   - component: {fileID: 8494987287460536595}
   - component: {fileID: 633065567072840668}
-  m_Layer: 4
+  m_Layer: 0
   m_Name: Lever Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -602,7 +602,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.52, y: 1.73}
+  m_Size: {x: 1.47, y: 1.92}
   m_EdgeRadius: 0
 --- !u!114 &633065567072840668
 MonoBehaviour:
