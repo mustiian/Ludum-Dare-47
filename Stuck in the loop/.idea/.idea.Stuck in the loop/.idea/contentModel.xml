@@ -7,10 +7,20 @@
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
+          <e p="Audio" t="Include">
+            <e p="SoundEffectController.cs" t="Include" />
+            <e p="SoundEffectParticle.cs" t="Include" />
+            <e p="SoundEffectStorage.cs" t="Include" />
+          </e>
           <e p="Box" t="Include">
             <e p="BoxStats.cs" t="Include" />
           </e>
+          <e p="Checkpoint" t="Include">
+            <e p="CheckpointItem.cs" t="Include" />
+            <e p="CheckpointManager.cs" t="Include" />
+          </e>
           <e p="ColorType.cs" t="Include" />
+          <e p="FaderController.cs" t="Include" />
           <e p="LevelStages" t="Include">
             <e p="Stage.cs" t="Include" />
             <e p="Stages" t="Include">
@@ -29,6 +39,7 @@
             <e p="PlatformTriger.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
+            <e p="PlayerAnimation.cs" t="Include" />
             <e p="PlayerBoxInteraction.cs" t="Include" />
             <e p="PlayerGrabColider.cs" t="Include" />
             <e p="PlayerLeverInteraction.cs" t="Include" />
