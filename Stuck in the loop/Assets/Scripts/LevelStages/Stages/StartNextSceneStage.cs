@@ -41,7 +41,7 @@ public class StartNextSceneStage : Stage
     {
         yield return new WaitForSeconds(FadeTime);
 
-        int index = SceneManager.GetActiveScene().buildIndex;
+        int index = SceneManager.GetActiveScene().buildIndex + 1;
         SceneManager.LoadScene(index);
     }
 }
