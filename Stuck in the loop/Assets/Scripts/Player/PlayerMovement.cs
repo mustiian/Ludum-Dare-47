@@ -33,6 +33,10 @@ public class PlayerMovement : MonoBehaviour
     {
         Direction.x = Input.GetAxisRaw("Horizontal");
         Direction.y = Input.GetAxisRaw("Vertical");
+
+        if (Direction.x != 0 && Direction.y != 0)
+            Direction.y = 0;
+
         Direction.Normalize();
         Direction *= Speed * Time.fixedDeltaTime;
         rigidBody.MovePosition(rigidBody.position + Direction);
