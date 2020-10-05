@@ -4,10 +4,9 @@ using UnityEngine;
 
 public class BoxStats: MonoBehaviour
 {
-    [SerializeField]
-    private ColorType.Color boxColor;
-    [SerializeField]
-    private bool _isDragable;
+    public int boxColor;
+
+    public bool _isDragable;
 
 
     private Rigidbody2D _boxRB2D;
@@ -15,27 +14,34 @@ public class BoxStats: MonoBehaviour
     //Before we have spirite
     private SpriteRenderer spriteColor;
 
+    public bool isOnPlatform;
+
     private void Start()
     {
         _boxRB2D = GetComponent<Rigidbody2D>();
-        CanBeDragged();
-
-        //Before we have spirite
-        spriteColor = GetComponentInChildren<SpriteRenderer>();
-        switch (boxColor)
-        {
-            case ColorType.Color.red:
-                spriteColor.color = Color.red;
-                break;
-            case ColorType.Color.blue:
-                spriteColor.color = Color.blue;
-                break;
-            case ColorType.Color.green:
-                spriteColor.color = Color.green;
-                break;
-        }
- 
     }
+
+
+    private void Update()
+    {
+        if (isOnPlatform)
+        {
+            CanBeDragged();
+
+            //Before we have spirite
+            spriteColor = GetComponentInChildren<SpriteRenderer>();
+            switch (boxColor)
+            {
+                case 1:
+                    spriteColor.color = Color.red;
+                    break;
+                case 2:
+                    spriteColor.color = Color.green;
+                    break;
+            }
+        }
+    }
+
 
     public bool IsDragable()
     {
@@ -49,5 +55,7 @@ public class BoxStats: MonoBehaviour
             _boxRB2D.bodyType = RigidbodyType2D.Static;
         }
     }
-    
+
+
+
 }
