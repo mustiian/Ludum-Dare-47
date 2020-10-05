@@ -1541,6 +1541,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Lever Restorer
       objectReference: {fileID: 0}
+    - target: {fileID: 8635986044363410372, guid: dfb465dcbe67a0b4facc8c151328d042,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 1.38
+      objectReference: {fileID: 0}
     - target: {fileID: 8635986044363410379, guid: dfb465dcbe67a0b4facc8c151328d042,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1940,6 +1945,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fade (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3936112070219923950, guid: bffb39af72ce1b4408f376904dab1f44,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bffb39af72ce1b4408f376904dab1f44, type: 3}
@@ -4251,6 +4261,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1038831760647357378, guid: 120429a2c33e29c41ab19b8f2c013849,
+        type: 3}
+      propertyPath: m_Size.x
+      value: 0.83
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038831760647357378, guid: 120429a2c33e29c41ab19b8f2c013849,
+        type: 3}
+      propertyPath: m_Offset.x
+      value: -0.03
+      objectReference: {fileID: 0}
+    - target: {fileID: 1038831760647357378, guid: 120429a2c33e29c41ab19b8f2c013849,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.4
+      objectReference: {fileID: 0}
     - target: {fileID: 1038831760647357379, guid: 120429a2c33e29c41ab19b8f2c013849,
         type: 3}
       propertyPath: m_LocalPosition.x
