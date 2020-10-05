@@ -21,7 +21,7 @@ public class PlatformTriger : MonoBehaviour
         Debug.Log($"Box is on platform: {name}");
         activated = true;
 
-        if (other.gameObject.tag == "Box")
+        if (other.gameObject.tag == "Box" && platformColor == other.gameObject.GetComponent<BoxStats>().boxColor)
         {
             other.transform.position = this.transform.position;
             other.gameObject.GetComponent<BoxStats>().isOnPlatform = true;

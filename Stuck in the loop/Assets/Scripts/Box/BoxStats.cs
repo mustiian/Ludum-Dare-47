@@ -38,6 +38,9 @@ public class BoxStats: MonoBehaviour
                 case 2:
                     spriteColor.color = Color.green;
                     break;
+                case 3:
+                    spriteColor.color = Color.blue;
+                    break;
             }
         }
     }
