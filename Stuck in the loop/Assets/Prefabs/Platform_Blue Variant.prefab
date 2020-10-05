@@ -73,10 +73,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 21300000, guid: 90a29324b7700ed4c946ee72589f9800,
         type: 3}
+    - target: {fileID: 8225729675850527318, guid: a740213730954854381fa8ce6e99f0a5,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 8225729675850527319, guid: a740213730954854381fa8ce6e99f0a5,
         type: 3}
       propertyPath: m_Name
-      value: Platform_Blue
+      value: Platform_Blue Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a740213730954854381fa8ce6e99f0a5, type: 3}
