@@ -33,7 +33,6 @@ public class CheckpointItem : MonoBehaviour
         {
             box._isDragable = true;
             box.isOnPlatform = false;
-            box.GetComponentInChildren<SpriteRenderer>().color = Color.white;
             box.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
         }
 
