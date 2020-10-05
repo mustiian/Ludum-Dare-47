@@ -109,7 +109,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.48, y: 0.38}
+  m_Size: {x: 0.24, y: 0.18}
   m_EdgeRadius: 0
 --- !u!114 &8225729675850527314
 MonoBehaviour:
@@ -125,6 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trigger: {fileID: 8225729675850527315}
   activated: 0
+  platformColor: 2
 --- !u!114 &8225729675850527315
 MonoBehaviour:
   m_ObjectHideFlags: 0

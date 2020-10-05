@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8225729675850527314}
   - component: {fileID: 8225729675850527315}
   m_Layer: 0
-  m_Name: Platform
+  m_Name: Platform_Red
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -109,7 +109,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.48, y: 0.38}
+  m_Size: {x: 0.28, y: 0.15}
   m_EdgeRadius: 0
 --- !u!114 &8225729675850527314
 MonoBehaviour:
@@ -125,6 +125,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trigger: {fileID: 8225729675850527315}
   activated: 0
+  platformColor: 1
 --- !u!114 &8225729675850527315
 MonoBehaviour:
   m_ObjectHideFlags: 0

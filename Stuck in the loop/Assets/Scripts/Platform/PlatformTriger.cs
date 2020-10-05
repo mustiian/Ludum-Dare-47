@@ -8,6 +8,7 @@ public class PlatformTriger : MonoBehaviour
     [SerializeField] private Game.BoxTrigger2D trigger;
 
     public bool activated = false;
+    public int platformColor; // 1 red, 2 green
 
     private void Awake()
     {
@@ -19,6 +20,16 @@ public class PlatformTriger : MonoBehaviour
     {
         Debug.Log($"Box is on platform: {name}");
         activated = true;
+
+        if (other.gameObject.tag == "Box")
+        {
+            other.transform.position = this.transform.position;
+            other.gameObject.GetComponent<BoxStats>().isOnPlatform = true;
+            other.gameObject.GetComponent<BoxStats>().boxColor = platformColor;
+            other.gameObject.GetComponent<BoxStats>()._isDragable = false;
+        }
+        
+
     }
 
     private void OnMyTriggerExit(Collider2D triggered)
