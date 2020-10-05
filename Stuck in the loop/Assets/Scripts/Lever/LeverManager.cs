@@ -1,7 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Game;
+﻿using UnityEngine;
+using System;
 
 public class LeverManager : MonoBehaviour
 {
@@ -9,6 +7,8 @@ public class LeverManager : MonoBehaviour
 
     [HideInInspector]
     public CheckpointManager CheckpointManager;
+
+    public Action OnActivationLever;
 
     private void Start()
     {
@@ -21,6 +21,8 @@ public class LeverManager : MonoBehaviour
             CheckpointManager.ResetToCheckpoint();
         else if (Type == LeverType.Saver)
             CheckpointManager.SaveCheckpoint();
+
+        OnActivationLever?.Invoke();
     }
 }
 
