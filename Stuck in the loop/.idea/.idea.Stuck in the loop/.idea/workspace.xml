@@ -26,8 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fdcef31-61fb-489d-8cdd-99973e66223d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Door.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Room/TeleportationThroughDoors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Room/TeleportationThroughDoors.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/test_level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/test_level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +110,7 @@
       <updated>1601724839332</updated>
       <workItem from="1601724875482" duration="17416000" />
       <workItem from="1601804672110" duration="19430000" />
-      <workItem from="1601919002433" duration="680000" />
+      <workItem from="1601919002433" duration="1355000" />
     </task>
     <servers />
   </component>
