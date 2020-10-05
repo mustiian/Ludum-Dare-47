@@ -4,16 +4,11 @@ using UnityEngine;
 using StageManager;
 using UnityEngine.SceneManagement;
 using Game;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class StartNextSceneStage : Stage
 {
     public float FadeTime = 2f;
-
-    private bool loadNextScene = false;
-
-    private FaderController fader;
-
-    private List<BoxTrigger2D> doorTriggers;
 
     public override bool ConditionToFinish()
     {
@@ -22,11 +17,10 @@ public class StartNextSceneStage : Stage
 
     public override void InitStage()
     {
-        doorTriggers = new List<BoxTrigger2D>();
-
         foreach (var door in FindObjectsOfType<Door>())
         {
             door.GetComponentInChildren<BoxTrigger2D>().OnEnter += EnterTriggerEvent;
+            door.GetComponentInChildren<Light2D>().enabled = true;
         }
     }
 
