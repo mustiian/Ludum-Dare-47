@@ -5,19 +5,14 @@ using StageManager;
 
 public class CorrectPlatformsStage : Stage
 {
-    //[System.Serializable]
-    //public struct PlatformStatus
-    //{
-    //    public PlatformTriger platformTrigger;
-    //    public bool Status;
-    //}
-
     private PlatformTriger[] CheckPlatforms;
 
     public override bool ConditionToFinish()
     {
         foreach (var platform in CheckPlatforms)
         {
+            Debug.Log(platform.activated + " " + platform.gameObject.name);
+
             if (platform.activated != true)
                 return false;
         }

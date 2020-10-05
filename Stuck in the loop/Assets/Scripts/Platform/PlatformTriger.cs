@@ -35,7 +35,6 @@ public class PlatformTriger : MonoBehaviour
     private void OnMyTriggerExit(Collider2D triggered)
     {
         Debug.Log($"Box is out platform: {name}");
-        activated = false;
     }
 }
 
