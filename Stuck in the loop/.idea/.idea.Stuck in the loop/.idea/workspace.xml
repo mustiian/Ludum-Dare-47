@@ -26,13 +26,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fdcef31-61fb-489d-8cdd-99973e66223d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Door.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Room/TeleportationThroughDoors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Room/TeleportationThroughDoors.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/BoxTrigger2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/BoxTrigger2D.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Demo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/test_level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/test_level.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,7 +51,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/ITrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/Trigger2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TransformExtenstion.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TransformExtension.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Room/DoorTeleport.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Room/BinedDoors.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Room/Door.cs" />
@@ -65,6 +59,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Room/Room.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Room/Wall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/BoxTrigger2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TransformExtension.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Room/TeleportationThroughDoors.cs" />
       </list>
     </option>
@@ -113,7 +108,7 @@
       <updated>1601724839332</updated>
       <workItem from="1601724875482" duration="17416000" />
       <workItem from="1601804672110" duration="19430000" />
-      <workItem from="1601919002433" duration="325000" />
+      <workItem from="1601919002433" duration="680000" />
     </task>
     <servers />
   </component>

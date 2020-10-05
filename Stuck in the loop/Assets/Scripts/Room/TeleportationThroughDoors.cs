@@ -76,7 +76,7 @@ namespace Game
                 var originalInDoorForward = fromDoor.transform.InverseTransformVector(this.original.transform.forward);
 
                 this.clone.transform.position = toDoor.transform.TransformPoint(-originalInDoorPosition);
-                this.clone.transform.forward = toDoor.transform.TransformVector(-originalInDoorForward);
+                // this.clone.transform.forward = toDoor.transform.TransformVector(-originalInDoorForward);
             }
 
             public void Complete(bool isWalkedThrough)
