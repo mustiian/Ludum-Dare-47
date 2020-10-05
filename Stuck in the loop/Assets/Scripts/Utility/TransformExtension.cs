@@ -8,7 +8,7 @@ namespace Utility
         {
             to.position = from.position;
             to.rotation = from.rotation;
-            to.localScale = to.parent.InverseTransformVector(from.lossyScale);
+            to.localScale = to.parent == null ? from.localScale : to.parent.InverseTransformVector(from.lossyScale);
             return to;
         }
     }

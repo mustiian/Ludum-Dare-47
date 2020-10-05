@@ -26,16 +26,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2fdcef31-61fb-489d-8cdd-99973e66223d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Art.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Floor.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Floor.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Wall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Wall.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Room/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Room/Room.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Door.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Door.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Room/TeleportationThroughDoors.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Room/TeleportationThroughDoors.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Room/Wall.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Room/Wall.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Triggers/BoxTrigger2D.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Triggers/BoxTrigger2D.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_Scenes/Demo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/Demo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/TestScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/TestScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Scenes/test_level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Scenes/test_level.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,13 +59,13 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TransformExtension.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Room/DoorTeleport.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Room/BinedDoors.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/BoxTrigger2D.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Room/Door.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/GameObjectExtension.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Room/BindedDoors.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Room/TeleportationThroughDoors.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Room/Room.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Room/Wall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Triggers/BoxTrigger2D.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Room/TeleportationThroughDoors.cs" />
       </list>
     </option>
   </component>
@@ -96,10 +93,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="12352">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="12352" />
+      <option name="pid" />
       <option name="selectedOptions">
         <set />
       </option>
@@ -116,6 +113,7 @@
       <updated>1601724839332</updated>
       <workItem from="1601724875482" duration="17416000" />
       <workItem from="1601804672110" duration="19430000" />
+      <workItem from="1601919002433" duration="325000" />
     </task>
     <servers />
   </component>
@@ -225,6 +223,10 @@
       <screen x="1920" y="0" width="1080" height="1920" />
     </state>
     <state x="2052" y="693" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601730697038" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1601919149607">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1601919149607" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

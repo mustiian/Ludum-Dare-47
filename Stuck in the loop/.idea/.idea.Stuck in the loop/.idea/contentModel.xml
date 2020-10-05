@@ -8,6 +8,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="Audio" t="Include">
+            <e p="BackgroundAudio.cs" t="Include" />
             <e p="SoundEffectController.cs" t="Include" />
             <e p="SoundEffectParticle.cs" t="Include" />
             <e p="SoundEffectStorage.cs" t="Include" />
@@ -25,17 +26,22 @@
             <e p="Stage.cs" t="Include" />
             <e p="Stages" t="Include">
               <e p="CorrectPlatformsStage.cs" t="Include" />
+              <e p="StartNextSceneStage.cs" t="Include" />
+              <e p="StartSceneStage.cs" t="Include" />
             </e>
             <e p="StagesCollection.cs" t="Include" />
             <e p="StagesManager.cs" t="Include" />
           </e>
           <e p="Lever" t="Include">
+            <e p="LeverAnimation.cs" t="Include" />
             <e p="LeverManager.cs" t="Include" />
+            <e p="LeverSound.cs" t="Include" />
           </e>
           <e p="Light" t="Include">
             <e p="LightController.cs" t="Include" />
           </e>
           <e p="Platform" t="Include">
+            <e p="PlatformSound.cs" t="Include" />
             <e p="PlatformTriger.cs" t="Include" />
           </e>
           <e p="Player" t="Include">
@@ -44,6 +50,7 @@
             <e p="PlayerGrabColider.cs" t="Include" />
             <e p="PlayerLeverInteraction.cs" t="Include" />
             <e p="PlayerMovement.cs" t="Include" />
+            <e p="PlayerSound.cs" t="Include" />
           </e>
           <e p="Room" t="Include">
             <e p="Door.cs" t="Include" />

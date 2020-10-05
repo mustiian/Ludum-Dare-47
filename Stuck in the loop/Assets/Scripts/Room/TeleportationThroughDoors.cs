@@ -59,6 +59,7 @@ namespace Game
                 this.fromDoor = fromDoor;
                 this.toDoor = toDoor;
                 this.clone = Instantiate(original);
+                this.clone.name = $"{original.name} - {clone.GetInstanceID()}";
                 this.clone.layer = mirrorLayer;
                 
                 // foreach (var collider in this.clone.GetComponentsInChildren<Collider2D>())
@@ -80,6 +81,8 @@ namespace Game
 
             public void Complete(bool isWalkedThrough)
             {
+                if (clone == null) return;
+
                 if (isWalkedThrough)
                 {
                     original.transform.Copy(clone.transform);
