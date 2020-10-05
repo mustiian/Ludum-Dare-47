@@ -19,7 +19,9 @@ public class RoomSectionFade : MonoBehaviour
     {
         sprite = GetComponent<SpriteRenderer>();
         trigger.OnEnter += OnMyTriggerEnter;
-
+        var color = sprite.color;
+        color.a = 1f;
+        sprite.color = color;
     }
 
     IEnumerator Fade()

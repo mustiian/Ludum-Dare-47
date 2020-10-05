@@ -27,9 +27,8 @@
   <component name="ChangeListManager">
     <list default="true" id="2fdcef31-61fb-489d-8cdd-99973e66223d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Stuck in the loop/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Room.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Room.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Room/Room.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Room/Room.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/fade.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/fade.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Room/RoomSectionFade.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Room/RoomSectionFade.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +62,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Utility/TransformExtension.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Room/TeleportationThroughDoors.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Room/Room.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Room/RoomSectionFade.cs" />
       </list>
     </option>
   </component>
@@ -220,10 +220,10 @@
       <screen x="1920" y="0" width="1080" height="1920" />
     </state>
     <state x="2052" y="693" key="Vcs.Push.Dialog.v2/0.0.1536.864/1920.0.1080.1920@1920.0.1080.1920" timestamp="1601730697038" />
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1601926844536">
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1601927657249">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1601926844536" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1601927657249" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
