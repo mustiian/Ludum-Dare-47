@@ -257,8 +257,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   UsedSoundEffects:
-  - audio: {fileID: 0}
-    type: 0
+  - audio: {fileID: 8300000, guid: 53f943d582be66447907f12764b553b3, type: 3}
+    type: 1
+  - audio: {fileID: 8300000, guid: a29c6fa0db8eb1d49b8e26a295b99b58, type: 3}
+    type: 2
+  - audio: {fileID: 8300000, guid: 166d1c1a8195404469bc85529affd4fc, type: 3}
+    type: 3
 --- !u!114 &4840042091122824259
 MonoBehaviour:
   m_ObjectHideFlags: 0

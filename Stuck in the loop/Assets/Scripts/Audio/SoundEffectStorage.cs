@@ -22,6 +22,8 @@ public class SoundEffectStorage : MonoBehaviour
     /// </summary>
     public SoundEffect[] UsedSoundEffects;
 
+    public static SoundEffectStorage instance;
+
     /// <summary>
     /// All sounds available through the type
     /// </summary>
@@ -36,6 +38,9 @@ public class SoundEffectStorage : MonoBehaviour
         {
             allSoundEffects.Add (sound.type, sound.audio);
         }
+
+        if (instance == null)
+            instance = this;
     }
 
     /// <summary>
@@ -77,5 +82,8 @@ public class SoundEffectStorage : MonoBehaviour
 /// </summary>
 public enum SoundEffectType
 {
-    None
+    None,
+    Step1,
+    Step2,
+    Step3
 }
