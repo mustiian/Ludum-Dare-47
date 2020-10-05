@@ -87,12 +87,22 @@ PrefabInstance:
     - target: {fileID: 7086091149623082893, guid: f8dd3b0976675bd46894bad9ea5ce3f9,
         type: 3}
       propertyPath: m_Name
-      value: BoxGreen
+      value: BoxGreen Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7086091149623082894, guid: f8dd3b0976675bd46894bad9ea5ce3f9,
         type: 3}
       propertyPath: m_Size.x
       value: 1.04
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086091149623082894, guid: f8dd3b0976675bd46894bad9ea5ce3f9,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 7086091149623082894, guid: f8dd3b0976675bd46894bad9ea5ce3f9,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 7086091150147630768, guid: f8dd3b0976675bd46894bad9ea5ce3f9,
         type: 3}

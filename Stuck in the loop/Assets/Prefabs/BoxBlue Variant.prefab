@@ -70,7 +70,17 @@ PrefabInstance:
     - target: {fileID: 2401812664495819260, guid: 59a4e99a3e714524187176b3812342b2,
         type: 3}
       propertyPath: m_Name
-      value: BoxBlue
+      value: BoxBlue Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401812664495819263, guid: 59a4e99a3e714524187176b3812342b2,
+        type: 3}
+      propertyPath: m_Size.y
+      value: 1.08
+      objectReference: {fileID: 0}
+    - target: {fileID: 2401812664495819263, guid: 59a4e99a3e714524187176b3812342b2,
+        type: 3}
+      propertyPath: m_Offset.y
+      value: -0.01
       objectReference: {fileID: 0}
     - target: {fileID: 2401812665053397184, guid: 59a4e99a3e714524187176b3812342b2,
         type: 3}
