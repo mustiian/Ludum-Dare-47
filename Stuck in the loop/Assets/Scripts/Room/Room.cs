@@ -11,6 +11,7 @@ namespace Game
         [SerializeField] private float wallThickness;
         [SerializeField] private Wall[] walls;
         [SerializeField] private SpriteRenderer floor;
+        [SerializeField] private Transform fade;
 
         private void OnValidate()
         {
@@ -33,6 +34,13 @@ namespace Game
                 floor.transform.parent = transform;
                 floor.size = size;
                 floor.transform.localPosition = Vector3.zero;
+            }
+
+            if (fade != null)
+            {
+                fade.transform.localPosition = Vector3.zero;
+                fade.transform.localScale = new Vector3(size.x, size.y, 1f);
+                fade.transform.localRotation = Quaternion.identity;
             }
         }
 
