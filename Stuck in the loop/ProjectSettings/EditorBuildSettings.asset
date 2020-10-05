@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: Assets/_Scenes/simple_level.unity
     guid: b2fabd396d92f0c4a8b9d9baf0354c54
   - enabled: 1
-    path: Assets/_Scenes/level-rasul.unity
-    guid: 594f5014a5e0b2048aa478a81b99fe5e
-  - enabled: 1
     path: Assets/_Scenes/nichita_level.unity
     guid: 9fb01d2d109c78544b30a1896fe7adb6
+  - enabled: 1
+    path: Assets/_Scenes/level-rasul.unity
+    guid: 594f5014a5e0b2048aa478a81b99fe5e
   - enabled: 1
     path: Assets/_Scenes/The_end.unity
     guid: 2321b7a6d1aa3fa44a8ed022c8aa38e8
