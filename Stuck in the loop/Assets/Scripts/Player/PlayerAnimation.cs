@@ -17,6 +17,8 @@ public class PlayerAnimation : MonoBehaviour
     [SerializeField] private Trigger2D triggerRight;
     [SerializeField] private Trigger2D triggerLeft;
 
+    private Rigidbody2D rigidBody;
+
     void Start()
     {
         playerAnimator = GetComponent<Animator>();
@@ -32,6 +34,9 @@ public class PlayerAnimation : MonoBehaviour
         triggerUp.OnExit += StopBoxMoveUp;
         triggerRight.OnExit += StopBoxMoveRight;
         triggerLeft.OnExit += StopBoxMoveLeft;
+
+
+        rigidBody = GetComponentInParent<Rigidbody2D>();
 
     }
 
