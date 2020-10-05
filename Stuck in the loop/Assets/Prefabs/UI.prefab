@@ -112,7 +112,7 @@ GameObject:
   - component: {fileID: 5845874037028943469}
   - component: {fileID: 5845874037028943468}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Fader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

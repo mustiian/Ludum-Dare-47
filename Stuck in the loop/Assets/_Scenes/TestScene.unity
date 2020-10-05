@@ -2457,6 +2457,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   boxColor: 0
   _isDragable: 1
+  isOnPlatform: 0
 --- !u!61 &1167552649
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4193,6 +4194,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   trigger: {fileID: 1761539458}
   activated: 0
+  platformColor: 0
 --- !u!114 &1956990195
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4495,31 +4497,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Managers
-      objectReference: {fileID: 0}
-    - target: {fileID: 4840042091122824256, guid: 98d283145ba3aa44eae75709289a6a5c,
-        type: 3}
-      propertyPath: UsedSoundEffects.Array.size
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 4840042091122824256, guid: 98d283145ba3aa44eae75709289a6a5c,
-        type: 3}
-      propertyPath: UsedSoundEffects.Array.data[3].audio
-      value: 
-      objectReference: {fileID: 8300000, guid: e1b2ac352754fd946afc9002caab7a31, type: 3}
-    - target: {fileID: 4840042091122824256, guid: 98d283145ba3aa44eae75709289a6a5c,
-        type: 3}
-      propertyPath: UsedSoundEffects.Array.data[3].type
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 4840042091122824256, guid: 98d283145ba3aa44eae75709289a6a5c,
-        type: 3}
-      propertyPath: UsedSoundEffects.Array.data[4].audio
-      value: 
-      objectReference: {fileID: 8300000, guid: 0feb76f52c4ba164d8e10c2f4329f9b1, type: 3}
-    - target: {fileID: 4840042091122824256, guid: 98d283145ba3aa44eae75709289a6a5c,
-        type: 3}
-      propertyPath: UsedSoundEffects.Array.data[4].type
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 98d283145ba3aa44eae75709289a6a5c, type: 3}
