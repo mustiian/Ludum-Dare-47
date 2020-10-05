@@ -85,5 +85,7 @@ public enum SoundEffectType
     None,
     Step1,
     Step2,
-    Step3
+    Step3,
+    Platform,
+    Lever
 }
