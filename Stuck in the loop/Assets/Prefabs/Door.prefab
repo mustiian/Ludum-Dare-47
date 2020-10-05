@@ -76,7 +76,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   collisionLayer:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 513
   collisionTag: 
   debug: 0
 --- !u!61 &4032253455926313150
