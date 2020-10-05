@@ -29,6 +29,14 @@ public class CheckpointItem : MonoBehaviour
 
     public void ResetToCheckpoint()
     {
+        if (TryGetComponent(out BoxStats box))
+        {
+            box._isDragable = true;
+            box.isOnPlatform = false;
+            box.GetComponentInChildren<SpriteRenderer>().color = Color.white;
+            box.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        }
+
         if (checkpointPosition.Count != 0)
             rigibody.position = checkpointPosition.Pop();
         else
